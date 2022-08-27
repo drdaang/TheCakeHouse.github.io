@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lobster+Two&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=IBM+Plex+Sans&family=Lobster+Two&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=IBM+Plex+Sans:wght@400;700&family=Lobster+Two&family=Roboto&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+#name{
+    margin-right:auto;
+    font-size: xx-large;
+}
+
+
+ul{
+    /* border:2px solid white; */
+    display:flex;
+    height:12vh;
+    align-items:center;
+    justify-content: flex-end;
+    
+    
+}
+li{
+    /* border:2px solid white; */
+    /* display:inline; */
+    list-style: none;
+    padding:10px 34px;
+    font-size:x-large;
+    
+
+  
+    
+    
+}
+
+/* body{
+    background-color:red;
+} */
+header{
+    color:white;
+    /* color for caramel- #65350F*/
+    background-color:#65350F;
+    height:12vh;
+    font-family: 'Lobster Two', cursive;
+    position:sticky;
+    top:0;
+}
+
+body{
+    /* #bea895 */
+    background-color:#d2baa5;
+}
+.container2{
+    margin:0px auto;
+    display: flex;
+    justify-content:center;
+    border:3px solid black;
+    align-content:center;
+    align-items:center;
+    position: relative;
+    background-image: url('bg3.jpg');
+    height:40vw;
+    z-index: -1;
+}
+.container2 img{
+    width:40vw;
+}
+#cake-title{
+    font-family: 'Lobster Two', cursive;
+    font-size:8vw;
+    color:white;
+    transition:0.5s;
+  
+}
+#cake-title:hover{
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+    0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 #ccc,
+    0 7px 0 #ccc, 0 8px 0 #ccc,
+    0 9px 0 #ccc, 0 10px 0 #ccc,
+    0 11px 0 #ccc, 0 12px 0 rgba(0, 0, 0, 0.5);
+}
+.sub{
+   /* padding:0 auto; */
+   text-align: center;
+   color:white;
+   font-size:large;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-weight:bold;
+   padding:3vh;
+   
+}
+.btn{
+    background-color:rgb(244, 150, 166);
+    border-radius:5px;
+    padding:1em;
+    border:2px solid #F5C1CB;
+}
+.menu-link{
+    text-decoration: none;
+    color:white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:bold;
+   
+   
+}
+.menu-link1{
+    text-decoration: none;
+    color:white;
+    font-family: 'Lobster Two', cursive;
+    font-weight:bold;
+   
+   
+}
+.btn:hover{
+    background-color: #F5C1CB;
+}
+.container3{
+    border:2px dashed black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:bold;
+}
+.container3 h4{
+    
+    align-self: flex-start;
+    color:black;
+    font-weight: 900;
+    font-size:x-large;
+    margin-top: 50px;
+}
+#contact{
+    
+    left: 0;
+    padding-left: 0;
+    
+}
+.address{
+    margin:auto auto;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    
+}
+.gallery img{
+    width:35vw;
+    height:30vw;
+    margin: 3vh;
+}
+#menu-img{
+    width:70vw;
+    height:70vw;
+}
+.title{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 20px;
+    font-size:x-large;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:700;
+    border-top:2px dashed black;
+    margin-left:auto;
+}
+@media screen and (max-width:635px) {
+    .nav{
+        display:none;
+    }
+} 
+@media screen and (max-width:412px) {
+    #contact{
+        flex-grow: 2;
+    }
+} 
+
+#menu{
+    border-bottom: 2px dashed black;
+    padding-bottom:8vw;
+    padding-top:5vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    text-align: center;
+    background-color:#8e603a;
+    color: whitesmoke;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    /* height:1vh; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    
+    background-color: #ac6226;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0;
+    margin: 0;
+    /* padding: 0 18px; */
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  /* body {
+    
+  } */
+  
+  .calculator-grid {
+    padding: 0;
+    margin: 0;
+    background:transparent;
+    background-color: #8e603a;
+    /* background: linear-gradient(to right, #00AAFF, #00FF6C); */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(4, 10vw);
+    grid-template-rows: minmax(120px, auto) repeat(5, 8vh);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previousOperand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .currentOperand {
+    color: white;
+    font-size: 2.5rem;
+  }
