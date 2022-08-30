@@ -118,12 +118,18 @@ body{
 }
 .container3{
     border:2px dashed black;
-    display:flex;
+    display:grid;
     justify-content: center;
     align-items:center;
+   
     color:white;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight:bold;
+    
+}
+.container3 > div{
+    margin:0 2px;
+    border-bottom: 2px dashed black;
 }
 .container3 h4{
     
@@ -136,12 +142,15 @@ body{
 #contact{
     
     left: 0;
-    padding-left: 0;
+    
+    margin-right:30vw;
+     
     
 }
 .address{
-    margin:auto auto;
-}
+    /* width:10vw; */
+    margin-right:50vw;
+ } 
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +182,19 @@ body{
 @media screen and (max-width:635px) {
     .nav{
         display:none;
+    }
+} 
+@media screen and (max-width:280px) {
+    .newt{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    #bigt{
+        font-size:large;
+    }
+    #smt{
+        font-size:xx-small;
     }
 } 
 @media screen and (max-width:412px) {
@@ -282,4 +304,11 @@ body{
   .output .currentOperand {
     color: white;
     font-size: 2.5rem;
+  }
+  #smt{
+    font-size:0.4em;
+  }
+  .newt{
+    display:flex;
+    flex-direction:column;
   }
